@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" type="text/css" href="Pie.css" />
-  <link rel="stylesheet" href="menu_toggle.css">
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joaquin Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css">
+</head>
+<body>
+    
     <nav class="topheader">
-      <a href="" class="logo">
-        <img
-          width="40"
-          hieght="40"
-          src="imgs/vector-degradado-logotipo-colorido-pajaro_343694-1365.jpg"
-          alt=""
-        />
-      </a>
-      <!-- BOTÓN HAMBURGUESA -->
-   <button class="menu-toggle" aria-label="Abrir menú">
-    &#9776;
-    <!-- Ícono de hamburguesa -->
-   </button>
+        <a href="" class="logo">
+            <img width="40" height="40" src="imgs/vector-degradado-logotipo-colorido-pajaro_343694-1365.jpg" alt="Logo" />
+        </a>
 
-      <ul class="Menu-Horizontal">
-        <li><a href="">Productos</a></li>
-        <li>
-          <a href="">Promociones</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Tarjeta Credito</a></li>
-
-            <li><a href="">Tarjeta Debito</a></li>
-
-            <li><a href="">Beneficios Viaje</a></li>
-
-            <li><a href="">Plin</a></li>
-          </ul>
-        </li>
-        <li><a href="">Zona Digital</a></li>
-        <li><a href="#Contactanos">Contactanos</a></li>
-      </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            &#9776;
+        </button>
+      
+        <ul class="Menu-Horizontal">
+            <li><a href="">Productos</a></li>
+            <li>
+                <a href="">Promociones</a>
+                <ul class="Menu-Vertical">
+                    <li><a href="">Tarjeta Credito</a></li>
+                    <li><a href="">Tarjeta Debito</a></li>
+                    <li><a href="">Beneficios Viaje</a></li>
+                    <li><a href="">Plin</a></li>
+                </ul>
+            </li>
+            <li><a href="">Zona Digital</a></li>
+            <li><a href="#Contactanos">Contactanos</a></li>
+        </ul>
     </nav>
 
-    <!--Seccion Productos-->
     <section class="seccion-productos">
       <div class="div-gral-productos">
         <div class="div-prod-texto">
           <h2>Seccion Productos</h2>
-
           <p>
             El producto se refiere a cualquier bien, servicio o idea que una
             empresa ofrece y pone a disposición del mercado con el objetivo de
@@ -53,74 +47,54 @@
             se denomina mezcla de marketing o marketing mix. El objetivo que se
             establece en esta investigación consiste en explicar los diversos
             atributos que posee el producto como factores fundamentales del
-            marketing. El enfoque de la presente investigación es de carácter
-            cualitativo de tipo descriptivo. Los hallazgos destacados en la
-            investigación resaltan que la marca es un activo estratégico que va
-            más allá de la identificación física de un producto. Es una
-            herramienta clave para construir relaciones con los consumidores,
-            generar confianza y establecer una posición distintiva en el
-            mercado. Por otra parte la etiqueta es una parte fundamental del
-            producto, porque sirve para identificarlo, describirlo,
-            diferenciarlo, dar un servicio al cliente y por supuesto, también
-            para cumplir con las leyes, normativas o regulaciones establecidas
-            para cada industria o sector.
+            marketing.
           </p>
           <button>Mas info</button>
         </div>
         <div class="div-prod-img">
-          <img src="imgs/productos.jpg" />
+          <img src="imgs/productos.jpg" alt="Productos" />
         </div>
       </div>
     </section>
-    <!--Seccion Zona Digital-->
 
     <section class="seccion-zondig">
       <div class="div-gral-zondig">
         <div class="div-zondig-texto">
           <h2>Seccion Zonal Digital</h2>
-
           <p>
             Zona Digital: solucion para conexion a Internet mediante tecnologia
             inalambrica implementada en el espacio publico donde las personas
             que tengan un dispositivo con tecnología WiFi pueden conectarse
-            rapidamente y sin problemas a traves de puntos de acceso a un
-            servicio Internet.
+            rapidamente.
           </p>
         </div>
 
         <div class="div-zondig-video">
           <iframe
-            width="560"
+            width="100%"
             height="315"
             src="https://www.youtube.com/embed/uCI8MPaezzk?si=V97timIwzr1TSeUY"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
     </section>
-    <!--SECCION FORMULARIO-->
+
     <section class="seccion-formulario" id="Contactanos">
       <div class="div-cont-formulario">
         <h2>Formulario de Registro</h2>
         <p>Complete todos los campos...</p>
         <form class="formulario">
-          <!--INPUT:TEXT-->
           <div class="campo">
             <label for="nombre">Nombres Completos:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese sus nombres"
-            />
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" />
           </div>
-          <!--LISTA DESPLEGABLE-->
           <div class="campo">
-            <label for="nombres">Pais</label>
+            <label for="pais">Pais</label>
             <select name="pais" id="pais">
               <option value="">Seleccione un pais</option>
               <option value="peru">Peru</option>
@@ -129,92 +103,53 @@
               <option value="Mexico">Mexico</option>
             </select>
           </div>
-          <!--CHECKBOX-->
           <div class="campo">
             <label>Intereses: </label>
             <ul class="lista-checkbox">
-            <li><label><input type="checkbox"name="Intereses"value="xd"/>Futbol</label></li>
-            <li><label><input type="checkbox"name="Intereses"value=":v"/>Musica</label></li>
-            <li><label><input type="checkbox"name="Intereses"value="cf"/>VideoJuegos</label></li>
-            <li><label><input type="checkbox"name="Intereses"value="."/>Estudiar</label></li>
+                <li><label><input type="checkbox" name="Intereses" value="xd"/>Futbol</label></li>
+                <li><label><input type="checkbox" name="Intereses" value=":v"/>Musica</label></li>
+                <li><label><input type="checkbox" name="Intereses" value="cf"/>VideoJuegos</label></li>
+                <li><label><input type="checkbox" name="Intereses" value="."/>Estudiar</label></li>
             </ul>
           </div>
-          <!--RADIO-->
           <div class="campo">
             <label>Sexo:</label>
             <ul class="lista-radio">
-              <li><label><input type="radio"name="sexo"value="m">Masculino</label></li>
-              <li><label><input type="radio"name="sexo"value="f">Femenino</label></li>
+              <li><label><input type="radio" name="sexo" value="m">Masculino</label></li>
+              <li><label><input type="radio" name="sexo" value="f">Femenino</label></li>
+            </ul>
           </div>
           <button type="submit">Enviar</button>
         </form>
       </div>
     </section>
-    <!-- PIE DE PAGINA -->
 
     <section id="footer">
       <footer class="footer">
         <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
           <div class="footer-brand">
-            <img
-              src= "imgs/vector-degradado-logotipo-colorido-pajaro_343694-1365.jpg"
-              alt="Logo"
-              class="footer-logo"
-            />
+            <img src="imgs/vector-degradado-logotipo-colorido-pajaro_343694-1365.jpg" alt="Logo" class="footer-logo" />
             <p>LOREM IPSUM</p>
             <small>2025 Todos los derechos reservados</small>
           </div>
-
-          <!-- Enlaces legales -->
           <div class="footer-links">
             <h4>Legal</h4>
-            <a href="documentos/obtenerDocumento.pdf"
-              >Politica de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="documentos/obtenerDocumento.pdf">Politica de Privacidad</a>
             <a href="#">Terminos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
             <a href="/Documentos/LeyProteccionDatos.pdf">Proteccion de Datos</a>
           </div>
-
-          <!-- Redes sociales con íconos personalizados -->
           <div class="footer-social">
             <h4>Siguenos en nuestras redes</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="imgs/tiktok0.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="imgs/Youtube_logo.png"
-                alt="YouTube"
-                class="social-icon"
-            /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram" class="social-icon" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon" /></a>
+            <a href="#"><img src="imgs/tiktok0.png" alt="Twitter" class="social-icon" /></a>
+            <a href="#"><img src="imgs/Youtube_logo.png" alt="YouTube" class="social-icon" /></a>
           </div>
         </div>
       </footer>
     </section>
+
     <script src="menu_toggle.js"></script>
-  </body>
+</body>
 </html>
